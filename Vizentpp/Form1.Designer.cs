@@ -35,6 +35,7 @@ namespace Vizentpp
             this.clDurum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clMaksimumsicaklik = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,14 +69,25 @@ namespace Vizentpp
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 5000;
+            this.timer1.Interval = 50000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(787, 43);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Hava Durumu";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -90,6 +102,8 @@ namespace Vizentpp
         private System.Windows.Forms.DataGridViewTextBoxColumn clDurum;
         private System.Windows.Forms.DataGridViewTextBoxColumn clMaksimumsicaklik;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
