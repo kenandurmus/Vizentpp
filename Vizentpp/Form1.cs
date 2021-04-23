@@ -18,26 +18,7 @@ namespace Vizentpp
             InitializeComponent();
         }
 
-        //private void button1_Click(object sender, EventArgs e)
-        //{
-
-        //    XmlDocument doc1 = new XmlDocument();
-        //    doc1.Load(hava_durumu_link);
-        //    XmlElement root = doc1.DocumentElement;
-        //    XmlNodeList nodes = root.SelectNodes("sehirler");
-
-        //    foreach (XmlNode node in nodes)
-        //    {
-        //        string ili = node["ili"].InnerText;
-        //        string durum = node["Durum"].InnerText;
-        //        string maks_sicaklik = node["Mak"].InnerText;
-        //        DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-        //        row.Cells[0].Value = ili;
-        //        row.Cells[1].Value = durum;
-        //        row.Cells[2].Value = maks_sicaklik;
-        //        dataGridView1.Rows.Add(row);
-        //    }
-        //}
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
