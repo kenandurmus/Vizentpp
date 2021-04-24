@@ -35,6 +35,7 @@ namespace Vizentpp
             this.clDurum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clMaksimumsicaklik = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +47,7 @@ namespace Vizentpp
             this.clili,
             this.clDurum,
             this.clMaksimumsicaklik});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(6, 61);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(791, 365);
             this.dataGridView1.TabIndex = 1;
@@ -69,8 +70,14 @@ namespace Vizentpp
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 50000;
+            this.timer1.Interval = 20000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Enabled = true;
+            this.timer3.Interval = 20000;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // button1
             // 
@@ -103,6 +110,7 @@ namespace Vizentpp
         private System.Windows.Forms.DataGridViewTextBoxColumn clMaksimumsicaklik;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Button button1;
     }
 }

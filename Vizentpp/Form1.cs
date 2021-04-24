@@ -16,14 +16,14 @@ namespace Vizentpp
     public partial class Form1 : Form
     {
 
-
+        String hava_durumu_link = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
         public Form1()
         {
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            String hava_durumu_link = "https://www.mgm.gov.tr/FTPDATA/analiz/sonSOA.xml";
+            
 
             XmlDocument doc1 = new XmlDocument();
             doc1.Load(hava_durumu_link);
@@ -66,16 +66,16 @@ namespace Vizentpp
                 row.Cells[2].Value = maks_sicaklik;
                 dataGridView1.Rows.Add(row);
 
-                MessageBox.Show("Hava Durumu güncellendi.");
-
-
-
+               
             }
 
 
 
         }
 
-       
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Hava Durumu güncellendi.");
+        }
     }
    }
